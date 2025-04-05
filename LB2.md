@@ -75,7 +75,7 @@ pg_basebackup:
 
 Добавили строку:
 
-              0 3 * * * /usr/bin/pg_dump -U postgres postgres > /var/lib/postgresql/db_$(date +\%Y\%m\%d).sql && find /var/lib/postgresql -name "*.sql" -mtime +7 -delete
+              0 2 * * * /usr/bin/pg_dump -U postgres postgres > /var/lib/postgresql/db_$(date +\%Y\%m\%d).sql && find /var/lib/postgresql -name "*.sql" -mtime +7 -delete
 
 
 ![image](https://github.com/user-attachments/assets/779ed996-7149-49f9-974a-667130797784)
