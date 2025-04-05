@@ -47,7 +47,7 @@ pg_basebackup:
 
 Для создания резервной копии таблицы использовать команду: 
 
-        pg_dump -U postgres -d postgres -t test_schema.t_t -Fc -f public-test.dump
+        pg_dump -U postgres -d postgres -t test_schema.products -Fc -f public-test.dump
 
 ![image](https://github.com/user-attachments/assets/26b27767-2f04-492e-9c9c-20d4117c358d)
 
